@@ -26,6 +26,7 @@ d3.json("samples.json").then((data) => {
         option.text(names[i]);
         option.property("value", names[i]);
     }
+    optionChanged();
     //function to display bar chart, takes in the parameters, otu_id, sample_valeus and otu_labels
     function buildHorizontalPlot(otu_ids, sample_values, otu_labels){
         console.log(`Bar Chart Data`)
